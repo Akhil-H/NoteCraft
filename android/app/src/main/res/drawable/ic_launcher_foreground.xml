@@ -1,0 +1,19 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Large N -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M35,30 L35,78 L45,78 L45,45 L63,78 L73,78 L73,30 L63,30 L63,63 L45,30 Z" />
+        
+    <!-- NOTECRAFT text placeholder (simplified as dots or a clean bar) -->
+    <!-- Since text is hard in Vector, I will focus on the bold N which is the core identity -->
+    <!-- But I'll add a subtle bar below to hint at the logo design -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M35,82 L73,82 L73,85 L35,85 Z" />
+        
+</vector>
