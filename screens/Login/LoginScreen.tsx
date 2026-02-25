@@ -107,8 +107,9 @@ const styles = StyleSheet.create({
     inner: {
         flex: 1,
         paddingHorizontal: SPACING.xl,
-        justifyContent: 'space-between',
+        justifyContent: 'space-around',
         paddingBottom: SPACING.xxl,
+
     },
     header: {
         alignItems: 'center',
