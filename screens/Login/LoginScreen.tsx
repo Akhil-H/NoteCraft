@@ -40,10 +40,10 @@ const LoginScreen: React.FC<LoginScreenProps> = ({ onLogin, onGoToSignup }) => {
             <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
                 <View style={[styles.inner, { paddingTop: insets.top + SPACING.xxl }]}>
                     <View style={styles.header}>
-                        <View style={styles.logoCircle}>
-                            <Text style={styles.logoText}>N</Text>
+                        <View style={styles.logoBox}>
+                            <Text style={styles.logoN}>N</Text>
+                            <Text style={styles.logoBrand}>NOTECRAFT</Text>
                         </View>
-                        <Text style={styles.title}>Notecraft</Text>
                         <Text style={styles.subtitle}>Ignite your intelligence</Text>
                     </View>
 
@@ -115,10 +115,10 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         marginTop: SPACING.xl,
     },
-    logoCircle: {
-        width: 80,
-        height: 80,
-        borderRadius: BORDER_RADIUS.xl,
+    logoBox: {
+        width: 120,
+        height: 120,
+        borderRadius: 30,
         backgroundColor: COLORS.primary,
         justifyContent: 'center',
         alignItems: 'center',
@@ -128,10 +128,18 @@ const styles = StyleSheet.create({
         shadowRadius: 15,
         elevation: 10,
     },
-    logoText: {
-        fontSize: 40,
+    logoN: {
+        fontSize: 60,
         fontWeight: '900',
         color: COLORS.white,
+        marginTop: 0,
+    },
+    logoBrand: {
+        fontSize: 12,
+        fontWeight: '700',
+        color: COLORS.white,
+        letterSpacing: 2,
+        marginBottom: 8,
     },
     title: {
         fontSize: 32,

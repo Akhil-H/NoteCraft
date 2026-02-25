@@ -42,7 +42,10 @@ const SignupScreen: React.FC<SignupScreenProps> = ({ onSignup, onGoToLogin }) =>
                     showsVerticalScrollIndicator={false}
                 >
                     <View style={styles.header}>
-                        <Text style={styles.title}>Join Notecraft</Text>
+                        <View style={styles.logoBox}>
+                            <Text style={styles.logoN}>N</Text>
+                            <Text style={styles.logoBrand}>NOTECRAFT</Text>
+                        </View>
                         <Text style={styles.subtitle}>Start your journey of mastery today</Text>
                     </View>
 
@@ -116,6 +119,33 @@ const styles = StyleSheet.create({
     header: {
         marginTop: SPACING.xl,
         marginBottom: SPACING.xxl,
+        alignItems: 'center',
+    },
+    logoBox: {
+        width: 100,
+        height: 100,
+        borderRadius: 25,
+        backgroundColor: COLORS.primary,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom: SPACING.lg,
+        shadowColor: COLORS.primary,
+        shadowOpacity: 0.5,
+        shadowRadius: 15,
+        elevation: 10,
+    },
+    logoN: {
+        fontSize: 50,
+        fontWeight: '900',
+        color: COLORS.white,
+        marginBottom: 0,
+    },
+    logoBrand: {
+        fontSize: 10,
+        fontWeight: '700',
+        color: COLORS.white,
+        letterSpacing: 1.5,
+        marginBottom: 8,
     },
     title: {
         fontSize: 32,
